@@ -9,7 +9,7 @@ Function DeviceMenu(Int msgChoice = 0)
 			libs.Notify("With a lot of patience and a little luck you manage to insert the key into the lock and turn it. The bondage mittens fall off your hands.", messagebox = true)										
 			DeviceMenuRemoveWithKey()			
 		else
-			if Utility.RandomFloat(0.0, 99.9) < 20.0
+			if Utility.RandomFloat(0.0, 99.9) < 0.0
 				libs.Notify("You try to insert the key into the lock, but it slips away and falls to the ground. You can't find it anywhere.", messagebox = true)										
 				libs.playerref.RemoveItem(devicekey, 1)
 			Else
